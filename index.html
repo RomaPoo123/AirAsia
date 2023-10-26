@@ -47,7 +47,10 @@
       <!-- title -->
       <div class="maincontent">
         <div class="maincontent__title">
-          <h4>Авторские туры по Азии</h4>
+          <h4>
+            Авторские <br />
+            туры по Азии
+          </h4>
         </div>
         <div class="maincontent__text">
           <p>Открой для себя Азию</p>
@@ -60,24 +63,70 @@
       <!-- block with tours -->
       <div class="tours">
         <div class="tours__title">
-          <h3>Горящие туры <img src="img/flame.svg" alt="" /></h3>
+          <h3>Горящие туры <img class="fire" src="img/flame.svg" alt="" /></h3>
         </div>
-        <!-- block with one tour №1 -->
-        <div class="tour">
-          <div class="tour__img">
-            <img src="img/river__Thailand.png" alt="" />
-          </div>
-          <div class="tour__title">
-            <h2>Таиланд</h2>
-          </div>
-          <div class="tour__enabled">
-            <div class="tour__enabled-days">
-              <img class="calendar" src="img/calendar.svg" alt="" />
-              <p>7-12 ночей</p>
+        <div class="block__tours">
+          <!-- block with one tour №1 -->
+          <div class="tour">
+            <div class="tour__img">
+              <img src="img/river__Thailand.png" alt="" />
             </div>
-            <div class="tour__enabled-food">
+            <div class="tour__title">
+              <h2>Таиланд</h2>
+            </div>
+            <div class="tour__enabled">
+              <img class="calendar" src="img/calendar.svg" alt="" />
+              <p class="enabled">7-12 ночей</p>
               <img class="food" src="img/meal.svg" alt="" />
-              <p>Завтраки</p>
+              <p class="enabled">Завтраки</p>
+            </div>
+            <div class="tour__text">
+              <p>
+                Равным образом постоянное обеспечение нашей деятельности
+                позволяет оценить значение систем массового участия.
+              </p>
+            </div>
+            <div class="tour__button">
+              <button>Смотреть</button>
+            </div>
+          </div>
+          <!-- block with one tour №2 -->
+          <div class="tour">
+            <div class="tour__img">
+              <img src="img/pool__Bali.png" alt="" />
+            </div>
+            <div class="tour__title">
+              <h2>Бали</h2>
+            </div>
+            <div class="tour__enabled">
+              <img class="calendar" src="img/calendar.svg" alt="" />
+              <p class="enabled">7-12 ночей</p>
+              <img class="food" src="img/meal.svg" alt="" />
+              <p class="enabled">Завтраки</p>
+            </div>
+            <div class="tour__text">
+              <p>
+                Равным образом постоянное обеспечение нашей деятельности
+                позволяет оценить значение систем массового участия.
+              </p>
+            </div>
+            <div class="tour__button">
+              <button>Смотреть</button>
+            </div>
+          </div>
+          <!-- block with one tour №3 -->
+          <div class="tour">
+            <div class="tour__img">
+              <img src="img/ocean__Indonesia.png" alt="" />
+            </div>
+            <div class="tour__title">
+              <h2>Индонезия</h2>
+            </div>
+            <div class="tour__enabled">
+              <img class="calendar" src="img/calendar.svg" alt="" />
+              <p class="enabled">7-12 ночей</p>
+              <img class="food" src="img/meal.svg" alt="" />
+              <p class="enabled">Завтраки</p>
             </div>
             <div class="tour__text">
               <p>
@@ -90,62 +139,7 @@
             </div>
           </div>
         </div>
-        <!-- block with one tour №2 -->
-        <div class="tour">
-          <div class="tour__img">
-            <img src="img/pool__Bali.png" alt="" />
-          </div>
-          <div class="tour__title">
-            <h2>Бали</h2>
-          </div>
-          <div class="tour__enabled">
-            <div class="tour__enabled-days">
-              <img class="calendar" src="img/calendar.svg" alt="" />
-              <p>7-12 ночей</p>
-            </div>
-            <div class="tour__enabled-food">
-              <img class="food" src="img/meal.svg" alt="" />
-              <p>Завтраки</p>
-            </div>
-            <div class="tour__text">
-              <p>
-                Равным образом постоянное обеспечение нашей деятельности
-                позволяет оценить значение систем массового участия.
-              </p>
-            </div>
-            <div class="tour__button">
-              <button>Смотреть</button>
-            </div>
-          </div>
-        </div>
-        <!-- block with one tour №3 -->
-        <div class="tour">
-          <div class="tour__img">
-            <img src="img/ocean__Indonesia.png" alt="" />
-          </div>
-          <div class="tour__title">
-            <h2>Индонезия</h2>
-          </div>
-          <div class="tour__enabled">
-            <div class="tour__enabled-days">
-              <img class="calendar" src="img/calendar.svg" alt="" />
-              <p>7-12 ночей</p>
-            </div>
-            <div class="tour__enabled-food">
-              <img class="food" src="img/meal.svg" alt="" />
-              <p>Завтраки</p>
-            </div>
-            <div class="tour__text">
-              <p>
-                Равным образом постоянное обеспечение нашей деятельности
-                позволяет оценить значение систем массового участия.
-              </p>
-            </div>
-            <div class="tour__button">
-              <button>Смотреть</button>
-            </div>
-          </div>
-        </div>
+        <!-- /block__tours -->
       </div>
       <!-- /block with tours -->
       <!-- news and promotions -->
@@ -183,39 +177,39 @@
               </p>
             </div>
           </div>
-          <!-- pagination -->
-          <div class="pagination">
-            <div class="pagination__display">Страница 1 из 7</div>
-            <div class="pagination__controls">
-              <a class="pagination__prev" href=""><</a>
-              <ul class="pagination__pages">
-                <li class="pagination__pages-item">
-                  <a class="pagination__link" href="">1</a>
-                </li>
-                <li class="pagination__pages-item">
-                  <a class="pagination__link" href="">2</a>
-                </li>
-                <li class="pagination__pages-item">
-                  <a class="pagination__link" href="">3</a>
-                </li>
-                <li class="pagination__pages-item">
-                  <a class="pagination__link" href="">4</a>
-                </li>
-                <li class="pagination__pages-item">
-                  <a class="pagination__link" href="">5</a>
-                </li>
-                <li class="pagination__pages-item">
-                  <a class="pagination__link" href="">6</a>
-                </li>
-                <li class="pagination__pages-item">
-                  <a class="pagination__link" href="">7</a>
-                </li>
-              </ul>
-              <a class="pagination__next" href="">></a>
-            </div>
-          </div>
-          <!-- /pagination -->
         </div>
+        <!-- pagination -->
+        <div class="pagination">
+          <div class="pagination__display">Страница 1 из 7</div>
+          <div class="pagination__controls">
+            <a class="pagination__prev" href=""><</a>
+            <ul class="pagination__pages">
+              <li class="pagination__pages-item">
+                <a class="pagination__link" href="">1</a>
+              </li>
+              <li class="pagination__pages-item">
+                <a class="pagination__link" href="">2</a>
+              </li>
+              <li class="pagination__pages-item">
+                <a class="pagination__link" href="">3</a>
+              </li>
+              <li class="pagination__pages-item">
+                <a class="pagination__link" href="">4</a>
+              </li>
+              <li class="pagination__pages-item">
+                <a class="pagination__link" href="">5</a>
+              </li>
+              <li class="pagination__pages-item">
+                <a class="pagination__link" href="">6</a>
+              </li>
+              <li class="pagination__pages-item">
+                <a class="pagination__link" href="">7</a>
+              </li>
+            </ul>
+            <a class="pagination__next" href="">></a>
+          </div>
+        </div>
+        <!-- /pagination -->
       </div>
       <!-- /news and promotions -->
       <!-- Info -->
