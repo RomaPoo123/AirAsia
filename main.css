@@ -5,6 +5,7 @@ body {
   width: 1920px;
   height: 2930px;
   background-color: #001821;
+  margin: auto;
 }
 h1,
 h2,
@@ -52,7 +53,6 @@ button {
   display: flex;
   position: absolute;
   top: 0px;
-  left: 18px;
   flex-direction: column;
   justify-content: center;
   background-position: center;
@@ -71,7 +71,6 @@ button {
 }
 .header__logo {
   height: 38.36px;
-
   margin-left: 0px;
   margin-right: 79px;
 }
@@ -292,3 +291,122 @@ button {
 .stock:nth-child(2n) {
   background-image: url(img/Surfer.png);
 }
+.stock__date {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  margin-top: 252.5px;
+  margin-left: 30px;
+  margin-bottom: 12.5px;
+}
+.stock__title {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  margin-left: 31px;
+  margin-bottom: 3.5px;
+}
+.stock__text {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  margin-left: 32px;
+}
+
+/* info */
+.info {
+  width: 1139px;
+  height: 552px;
+  display: flex;
+  justify-content: right;
+}
+.info__oneImg {
+  width: 490px;
+  height: 505px;
+  border-radius: 5px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+.info__twoImg {
+  width: 785px;
+  height: 455px;
+  border-radius: 5px;
+  background-image: url(img/mountains.png);
+}
+.info__title {
+}
+.info__text {
+}
+/* /info */
+
+/* line */
+.line {
+  width: 1142px;
+  height: 4px;
+  background-color: #fff;
+  opacity: 0.1;
+  margin-top: 53px;
+  border-radius: 2px;
+}
+/* /line */
+
+/* footer */
+.footer {
+  display: flex;
+  width: 1142px;
+  height: 92.64px;
+  margin-top: 53px;
+}
+.footer__logo {
+  height: 38.36px;
+  margin-left: 0px;
+  margin-right: 79px;
+}
+.footer__nav {
+  margin-right: 274px;
+}
+.footer__social {
+  width: 174px;
+  height: 76px;
+  margin-right: 74px;
+}
+.social__menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-align: none;
+}
+.social__menu-item {
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+.social {
+  width: 36px;
+  height: 36px;
+}
+.footer__number {
+}
+.footer__number-text {
+  display: flex;
+  color: #9a9a9a;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  justify-content: end;
+}
+.footer__number-num {
+}
+
+/* /footer */
