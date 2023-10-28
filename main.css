@@ -2,10 +2,14 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Open Sans", sans-serif;
-  width: 1920px;
-  height: 2930px;
   background-color: #001821;
-  margin: auto;
+  margin: 0px;
+}
+.wrapper {
+  max-width: 1920px;
+  height: 2930px;
+  margin: 0px auto auto auto;
+  position: relative;
 }
 h1,
 h2,
@@ -39,26 +43,29 @@ button {
   border-color: none;
   border-image: none;
 }
-.wrapper {
+.container {
   justify-content: center;
-  margin: 26.6px 390px 389px;
+  margin: 0px 390px 389px;
   z-index: 1;
+  padding-top: 26.6px;
 }
 /* /general */
 /* fons */
-.fon-one {
+.fon {
+  max-width: 1920px;
+  position: absolute;
+  z-index: -1;
+}
+.fon__one {
   background-image: url(img/background__one.jpg);
   width: 1920px;
   height: 1202px;
-  display: flex;
-  position: absolute;
-  top: 0px;
-  flex-direction: column;
-  justify-content: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
+  margin-bottom: 670px;
+}
+.fon__two {
+  background-image: url(img/background__two.png);
+  width: 1920px;
+  height: 893px;
 }
 /* /fons */
 
@@ -318,32 +325,89 @@ button {
   line-height: 21px;
   margin-left: 32px;
 }
+/* pagination */
+.pagination {
+  margin-bottom: 36px;
+  display: flex;
+  justify-content: center;
+}
+.pagination__conteiner {
+  width: 375px;
+  height: 114px;
+  display: flex;
+}
+.pagination__display {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-right: 25px;
+}
+.pagination__controls {
+}
+.pagination__pages {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+.pagination__pages-item {
+  width: 32px;
+  height: 32px;
+}
 
+.pagination__link {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  text-decoration: none;
+}
+/* /pagination */
 /* info */
 .info {
   width: 1139px;
   height: 552px;
-  display: flex;
+  position: relative;
   justify-content: right;
 }
 .info__oneImg {
   width: 490px;
   height: 505px;
   border-radius: 5px;
-  position: relative;
+  position: absolute;
   top: 0px;
   left: 0px;
   z-index: -1;
 }
 .info__twoImg {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
   width: 785px;
   height: 455px;
   border-radius: 5px;
   background-image: url(img/mountains.png);
 }
 .info__title {
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 70px 0px 37px 81px;
 }
 .info__text {
+  width: 502px;
+  color: #060606;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  margin-left: 81px;
+  margin-bottom: 61px;
 }
 /* /info */
 
