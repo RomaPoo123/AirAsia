@@ -2,14 +2,21 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
   background-color: #001821;
   margin: 0px;
 }
 .wrapper {
   max-width: 1920px;
   height: 2930px;
+
   margin: 0px auto auto auto;
+
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 h1,
 h2,
@@ -23,26 +30,37 @@ p {
   margin: 0px;
 }
 button {
-  appearance: auto;
-  text-rendering: auto;
-  letter-spacing: normal;
-  word-spacing: normal;
+  height: 55px;
+  width: 168px;
+
+  border: none;
+  border-radius: 35px;
+
+  background: #f5170e;
+  padding: 0px;
+
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
   line-height: normal;
-  text-transform: none;
-  text-shadow: none;
-  display: inline-block;
-  text-align: center;
-  align-items: flex-start;
-  cursor: default;
-  box-sizing: border-box;
-  margin: none;
-  padding-block: none;
-  padding-inline: none;
-  border-width: none;
-  border-style: none;
-  border-color: none;
-  border-image: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }
+button:hover {
+  color: #c2bebe;
+  background: #a80303;
+  box-shadow: 0px 3px 5px 0px rgba(218, 1, 0, 0.3);
+
+  transition: background 0.1s linear;
+  transition: color 0.1 linear;
+}
+.tour__button-btn {
+  width: 135px;
+  border: 1px solid #f5170e;
+  background: #fff;
+  color: #f5170e;
+}
+
 .container {
   justify-content: center;
   margin: 0px 390px 389px;
@@ -58,12 +76,15 @@ button {
 }
 .fon__one {
   background-image: url(img/background__one.jpg);
+
   width: 1920px;
   height: 1202px;
+
   margin-bottom: 670px;
 }
 .fon__two {
   background-image: url(img/background__two.png);
+
   width: 1920px;
   height: 893px;
 }
@@ -73,18 +94,21 @@ button {
 .header {
   width: 1141px;
   height: 123.365px;
+
   display: flex;
   margin-bottom: 46px;
 }
 .header__logo {
   height: 38.36px;
+
   margin-left: 0px;
   margin-right: 79px;
 }
 .logo {
-  margin-top: 2.36px;
   width: 85px;
   height: 36px;
+
+  margin-top: 2.36px;
 }
 /* Nav */
 .header__nav {
@@ -104,33 +128,39 @@ button {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
 }
 .nav__element:last-child {
   margin-right: 0px;
 }
+.nav__element-item:hover {
+  color: #da0100;
+  transition: color 0.2s linear;
+}
 /* /Nav */
 .header__contact {
   width: 191px;
+
   display: block;
+
   margin-left: auto;
   margin-right: 0px;
 }
 .number {
   width: 191px;
-  white-space: nowrap;
   height: 35px;
+
+  white-space: nowrap;
+
   color: #fff;
   font-size: 26px;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
+
   margin-top: 0.04px;
 }
 .grafic__job {
   height: 20px;
-  width: 97px;
+  width: 160px;
+
   margin-left: auto;
   margin-right: 0px;
   margin-top: 0px;
@@ -138,23 +168,56 @@ button {
 .grafic__job-text {
   color: #fff;
   font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
   text-decoration-line: underline;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: end;
 }
+/* work schedule sign */
+.grafic-icon {
+  opacity: 0;
+  width: 160px;
+  height: 80px;
+  position: relative;
+}
+.grafic-svg {
+  position: absolute;
+  top: -21.5px;
+  left: 2px;
+  z-index: -1;
+}
+.grafic-icon > p {
+  color: #1e1f20;
+  font-size: 13px;
+  font-weight: 700;
+}
+.icon-textOne {
+  margin: 19px 18px 1px;
+  white-space: nowrap;
+}
+.icon-textTwo {
+  font-weight: 600;
+  margin-left: 19px;
+}
+.grafic__job-text:active .grafic-icon {
+  opacity: 1;
+}
+/* /work schedule sign */
+
 /* /Header */
 
 /* maincontent */
 .maincontent {
   width: 511px;
   height: 333px;
+
   margin-bottom: 246px;
 }
 .maincontent__title {
   color: #fff;
   font-size: 72px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   margin-bottom: 27.5px;
@@ -162,28 +225,9 @@ button {
 .maincontent__text {
   color: #fff;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
+
   margin-bottom: 33.5px;
-}
-.button {
-  height: 55px;
-  width: 168px;
-  border-radius: 35px;
-  background-color: #f5170e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.button-text {
-  color: #fff;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 /* /maincontent */
 
@@ -191,20 +235,22 @@ button {
 .tours {
   width: 1140px;
   height: 549px;
+
   margin-bottom: 127px;
 }
 .tours__title {
   color: #fff;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
+
   margin-bottom: 51px;
   margin-left: 3px;
 }
 .fire {
   width: 21px;
   height: 28px;
+
   margin-left: 12px;
 }
 .block__tours {
@@ -213,25 +259,28 @@ button {
 }
 
 .tour {
-  display: inline-block;
   width: 362px;
   height: 449px;
+
+  display: inline-block;
   border-radius: 5px 5px 5px 5px;
   background: #fff;
 }
 .tour__title {
   color: #000;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
+
   margin-bottom: 21px;
   margin-left: 22px;
 }
 .tour__enabled {
   width: 272px;
   height: 26px;
+
   display: flex;
+
   margin-left: 28px;
   margin-bottom: 23.5px;
 }
@@ -239,8 +288,6 @@ button {
 .enabled {
   color: #666;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
   margin-right: 28px;
   margin-top: 2px;
@@ -249,23 +296,28 @@ button {
 .calendar {
   width: 36px;
   height: 26px;
+
   margin-right: 10px;
 }
 .food {
   width: 36px;
   height: 26px;
+
   margin-right: 9px;
 }
 .tour__text {
   width: 324px;
   height: auto;
+
   margin-left: 22px;
   margin-bottom: 22.5px;
+
   color: #303030;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 21px;
+}
+.tour__button {
+  margin-left: 24px;
 }
 /* /tours */
 
@@ -275,7 +327,6 @@ button {
 .news__title {
   color: #fff;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   margin-bottom: 51px;
@@ -283,13 +334,16 @@ button {
 .news__stocks {
   width: 1139px;
   display: inline-flex;
+
   position: relative;
   justify-content: space-between;
+
   margin-bottom: 53px;
 }
 .stock {
   width: 557px;
   height: 394px;
+
   border-radius: 5px;
 }
 .stock:first-child {
@@ -301,9 +355,8 @@ button {
 .stock__date {
   color: #fff;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 21px;
+
   margin-top: 252.5px;
   margin-left: 30px;
   margin-bottom: 12.5px;
@@ -311,40 +364,46 @@ button {
 .stock__title {
   color: #fff;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px;
+
   margin-left: 31px;
   margin-bottom: 3.5px;
 }
 .stock__text {
   color: #fff;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 21px;
+
   margin-left: 32px;
 }
 /* pagination */
 .pagination {
+  height: 114px;
+
   margin-bottom: 36px;
-  display: flex;
-  justify-content: center;
+  margin-left: 382px;
 }
 .pagination__conteiner {
+  height: 32px;
   width: 375px;
-  height: 114px;
-  display: flex;
+
+  display: inline-flex;
 }
 .pagination__display {
+  height: auto;
+
+  padding-top: 4.5px;
+
   color: #fff;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
+
   margin-right: 25px;
 }
 .pagination__controls {
+  width: auto;
+  height: 32;
 }
 .pagination__pages {
   display: flex;
@@ -353,18 +412,31 @@ button {
   list-style-type: none;
 }
 .pagination__pages-item {
-  width: 32px;
   height: 32px;
+  width: 32px;
 }
 
-.pagination__link {
-  color: #fff;
+.link-circle {
+  fill: rgba(0, 0, 0, 0);
+}
+
+.text {
+  fill: #fff;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 21px;
   text-decoration: none;
 }
+.pagination__link:hover circle {
+  fill: rgba(255, 255, 255, 1);
+  transition: fill 0.3s linear;
+}
+
+.pagination__link:hover .text {
+  fill: #f5170e;
+  transition: fill 0.5s linear;
+}
+
 /* /pagination */
 /* info */
 .info {
@@ -376,38 +448,44 @@ button {
 .info__oneImg {
   width: 490px;
   height: 505px;
+
   border-radius: 5px;
+
   position: absolute;
   top: 0px;
   left: 0px;
   z-index: -1;
 }
 .info__twoImg {
+  width: 785px;
+  height: 455px;
+
   position: absolute;
   bottom: 0px;
   right: 0px;
-  width: 785px;
-  height: 455px;
+
   border-radius: 5px;
   background-image: url(img/mountains.png);
 }
 .info__title {
   color: #000;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
+
   margin: 70px 0px 37px 81px;
 }
 .info__text {
   width: 502px;
   color: #060606;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 27px;
+
   margin-left: 81px;
   margin-bottom: 61px;
+}
+.info__button {
+  margin-left: 81px;
 }
 /* /info */
 
@@ -415,8 +493,10 @@ button {
 .line {
   width: 1142px;
   height: 4px;
+
   background-color: #fff;
   opacity: 0.1;
+
   margin-top: 53px;
   border-radius: 2px;
 }
@@ -424,13 +504,15 @@ button {
 
 /* footer */
 .footer {
-  display: flex;
   width: 1142px;
   height: 92.64px;
+
+  display: flex;
   margin-top: 53px;
 }
 .footer__logo {
   height: 38.36px;
+
   margin-left: 0px;
   margin-right: 79px;
 }
@@ -439,34 +521,52 @@ button {
 }
 .footer__social {
   width: 174px;
-  height: 76px;
+
   margin-right: 74px;
 }
 .social__menu {
   display: flex;
   justify-content: space-between;
+
   padding: 0px;
   margin: 0px;
   text-decoration: none;
-  text-align: none;
 }
 .social__menu-item {
-  list-style-type: none;
+  display: flex;
+  justify-content: center;
+
   margin-right: 10px;
 }
 
 .social {
+  overflow: hidden;
+
   width: 36px;
   height: 36px;
 }
-.footer__number {
+.social-img {
+  height: 36px;
+  width: 36px;
 }
+
+.social-icon {
+  height: 36px;
+  width: 36px;
+
+  display: block;
+
+  fill: rgba(128, 128, 128, 0.3);
+}
+.social:hover .social-icon {
+  fill: rgb(145, 145, 145);
+  transition: fill 0.3s linear;
+}
+
 .footer__number-text {
   display: flex;
   color: #9a9a9a;
   font-size: 11px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
   justify-content: end;
 }
